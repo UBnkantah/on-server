@@ -83,24 +83,3 @@ router.post("/create-checkout-session", async (req, res) => {
 
 module.exports = router
 
-// Stripe webhook
-
-// try{
-
-// }catch(err){
-//     response.status(400).send(`Webhook Error: ${err.message}`);
-//     return;
-// }
-
-// //Handle the event
-// switch (event.type){
-//     case 'payment_intent.succeeded':
-//         const paymentIntent = event.data.object;
-//         // Then define a call a function to handle the event payment_intent.succeeded
-//         break;
-//         // ... handle other event types
-//         default:
-//             console.log(`Unhandled event type ${event.type}`)
-// }
-//     // Return a 200 response to acknowledge receipt of the event
-//     response.send()
